@@ -1,10 +1,12 @@
+import './index.css'
+
 function Head0(){
-    const UrlHead = "../assets/logoIfusp.png";
+    const UrlHead = "./src/assets/logoIfusp.png";
 
     return (
         <div>
             <div className="cabecalho">
-                <header>
+                <header className="Header">
                     <div className="container">
                         <div className="apresentacao">
                             <div className="logo">
