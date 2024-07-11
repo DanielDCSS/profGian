@@ -6,7 +6,6 @@ import Content0 from './Content0'
 
 function App() {
   
-
   return (
     <div>
         <Head0 />
@@ -16,7 +15,7 @@ function App() {
         <Content0 UrlImg="../assets/pesquisa.jpg" id ="teach" alt="Research" titulo="Ensino" />
         <Content0 UrlImg="" id ="contact" alt="" titulo="Contact"/>
         <Footer0 />
-    
+      
     </div>
   )
 }
