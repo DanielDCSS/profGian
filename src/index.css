@@ -136,14 +136,14 @@ section {
   clear: both; /* Limpa o float para evitar problemas de layout */
 }
 
-.social-medias{
+.social_medias{
   display: flex;
   justify-content: space-around;
   font-size: 30px;
   margin: 10px;
 }
 
-.social-medias i{
+.social_medias i{
   color: #3a3838;
 }
 
