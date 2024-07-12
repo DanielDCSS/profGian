@@ -19,9 +19,9 @@ function Contato0({secName, titulo, endereço, email, linkedln, telefone , displ
                 <div className="texto_contato">
                     
                     <p>{endereço} Para entrar em contato use as formas abaixo.</p>
-                    <p><FontAwesomeIcon icon={faArrowRight} />   Email :   {email}</p>
-                    <p><FontAwesomeIcon icon={faArrowRight} />   Linkedln :  <a href={ref}>{linkedln}</a></p>
-                    <p><FontAwesomeIcon icon={faArrowRight} />   Ramal :  {telefone}</p>
+                    <p><FontAwesomeIcon icon={faArrowRight} color={'#54b8b1'}/>   Email :   {email}</p>
+                    <p><FontAwesomeIcon icon={faArrowRight} color={'#54b8b1'}/>   Linkedln :  <a href={ref}>{linkedln}</a></p>
+                    <p><FontAwesomeIcon icon={faArrowRight} color={'#54b8b1'}/>   Ramal :  {telefone}</p>
                 </div>
             </div>
         </section>
