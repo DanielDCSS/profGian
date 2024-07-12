@@ -12,6 +12,7 @@ import Head0 from './Head0'
 import Footer0 from './Footer0'
 import AboutMe from './AboutMe'
 import ContentListing from './ContentListing'
+import Contato0 from './Contato0';
 
 function App() {
 
@@ -43,7 +44,8 @@ function App() {
 
         <ContentListing secName={'pesquisa'} titulo='Ensino' img_size={'250px'} UrlImg="./src/assets/ensino.jpg" img_class={'float-image-right'} texto={txt_abt_me}  subtitle={'Matérias lecionadas'} itens={items}/>
 
-        <AboutMe UrlImg="" id ="contact" alt="" titulo="Contact"/>
+        <Contato0  id ="contact" alt="" titulo="Contact"/>
+
         <Footer0 />
       
     </div>
