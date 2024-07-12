@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight ,faBook} from '@fortawesome/free-solid-svg-icons'
 /*import { faFacebook, faInstagram , faTwitter } from '@fortawesome/free-brands-svg-icons' */
 
-function Contato0({secName, titulo, texto, email, linkedln, telefone , display_subcontent, subtitle}){
+function Contato0({secName, titulo, endereço, email, linkedln, telefone , display_subcontent, subtitle}){
 
     const ref = "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHmWjNFXNvhcwAAAZCkb57o-CaPV-Y4bUFlcaAME_51VHyp4THF2iGWZNWCqsOdD-MEXCf1nLVPCcxHsMqKav1DSXV5_77275sbKAb8yZOn5tkqD8_UppAlnULYpXMKoOgHiQo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcaiocesar-aguiar%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app";
     
@@ -17,10 +17,11 @@ function Contato0({secName, titulo, texto, email, linkedln, telefone , display_s
                     <h2>{titulo}</h2>
                 </div>
                 <div className="texto_contato">
-                    <p>{texto}</p>
-                    <p>{email}</p>
-                    <a href={ref}>{linkedln}</a>
-                    <p>{telefone}</p>
+                    
+                    <p>{endereço} Para entrar em contato use as formas abaixo.</p>
+                    <p><FontAwesomeIcon icon={faArrowRight} />   Email :   {email}</p>
+                    <p><FontAwesomeIcon icon={faArrowRight} />   Linkedln :  <a href={ref}>{linkedln}</a></p>
+                    <p><FontAwesomeIcon icon={faArrowRight} />   Ramal :  {telefone}</p>
                 </div>
             </div>
         </section>
@@ -31,7 +32,7 @@ Contato0.defaultProps = {
     titulo: 'Contato',
     title_icon: "fa-solid fa-check",
     img_size: 'auto',
-    texto: 'Abaixo vão as informações para contato : ',
+    endereço: 'Rua do Matão, 1371 - Ed. Principal, Sala 2010, CEP 05508-090 - Cid. Universitária, São Paulo, SP, Brasil. ',
     email: 'tamplate@gmail.com',
     linkedln: 'MeuIdNoLinkedln',
     telefone:'123-345-6745',
@@ -44,3 +45,4 @@ Contato0.defaultProps = {
 
 
 export default Contato0 ; 
+
