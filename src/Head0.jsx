@@ -2,6 +2,25 @@ import './index.css'
 
 function Head0(){
     const UrlHead = "./src/assets/logoIfusp.png";
+    /*
+    document.addEventListener('DOMContentLoaded', function() {
+        window.scrollToSection = function(sectionId) {
+            const targetSection = document.getElementById(sectionId);
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        };
+    
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    });  Para fazer isso temos que usar os hooks do React*/
 
     return (
         <div>

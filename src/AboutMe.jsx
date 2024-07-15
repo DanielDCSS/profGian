@@ -2,13 +2,18 @@
 Esse content trata-se de uma estrutura simples de uma apresentação pessoal.
 O conteudo principal é acompanhado de uma imagem e um texto, já o subconteudo contem as redes sociais.
 */
-
+import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight ,faBook} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram , faTwitter } from '@fortawesome/free-brands-svg-icons'
+import data from './content.json'
 
 function AboutMe({secName, titulo, img_size, UrlImg, img_class, texto, display_subcontent, subtitle}){
-    
+
+    data.map((data) =>{
+        const abt_me = data.Textos.teste
+    })
+    // parece interessante tirar o props texto e colocar o texto em cada componente
     return (
         <section id={secName}>
             <div className={secName}>
@@ -18,7 +23,7 @@ function AboutMe({secName, titulo, img_size, UrlImg, img_class, texto, display_s
                 </div>
                 <div className="image-text-conteiner">
                     <img style={{width : img_size}} src={UrlImg} alt="imagem" className={img_class}/>
-                    <p>{texto}</p>
+                    <p>{abt_me}</p>
                 </div>
                 <div className={display_subcontent}>
                     <div className="subtitleSection">
@@ -38,12 +43,12 @@ function AboutMe({secName, titulo, img_size, UrlImg, img_class, texto, display_s
 
 AboutMe.defaultProps = {
     secName: 'conteudo',
-    titulo: 'Titulo do conteúdo',
+    titulo: 'About_me',
     title_icon: "fa-solid fa-check",
     img_size: 'auto',
     UrlImg: 'https://images.app.goo.gl/SLJGZ8u1kJZSAsPr6',
     img_class: '',
-    texto: 'O texto do conteudo vai aqui',
+    texto: 'Aqui vem o texto',
     display_subcontent: 'd-none',
     subtitle_icon: 'fa-solid fa-check',
     subtitle: 'Subtitulo do conteudo',

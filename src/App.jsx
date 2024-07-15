@@ -1,7 +1,7 @@
-//import { useState } from 'react'
+import React, {useState, useEffect} from 'react'; 
 
 //Fontes de estilo próprias
-import './index.css'
+import './index.css';
 
 //Fontes de estilo externas
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,9 +14,43 @@ import AboutMe from './AboutMe'
 import ContentListing from './ContentListing'
 import Contato0 from './Contato0';
 
+
+
 function App() {
 
+  /* 
+   window.onload = function() {
+                setTimeout(function() {
+                    document.querySelector('.info').style.opacity = '1';
+                    document.querySelector('.info').style.transform = 'translateY(0)';
+                }, 400);
+                setTimeout(function() {
+                    document.querySelector('.content').style.opacity = '1';
+                    document.querySelector('.content').style.transform = 'translateY(0)';
+                }, 600);
+                setTimeout(function() {
+                    document.querySelector('.publics').style.opacity = '1';
+                    document.querySelector('.publics').style.transform = 'translateY(0)';
+                }, 800);
+                setTimeout(function() {
+                    document.querySelector('.contato').style.opacity = '1';
+                    document.querySelector('.contato').style.transform = 'translateY(0)';
+                }, 1000);
+                setTimeout(function() {
+                    document.querySelector('.foto').style.opacity = '1';
+                    document.querySelector('.foto').style.transform = 'translateY(0)';
+                }, 1200);
+                setTimeout(function() {
+                    document.querySelector('.logo').style.opacity = '1';
+                    document.querySelector('.logo').style.transform = 'translateY(0)';
+                }, 1000);
+            }; 
+            Implementar essa função no JSX
+            Dom tree => Hooks do React
+  */
+
   var txt_abt_me = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.Lorem ipsum dolor sit amet,'
+
 
   var items = [
     { title: 'Item 1', comment: 'Este é o comentário do item 1', link: 'https://example.com' },
@@ -34,13 +68,12 @@ function App() {
     <div>
         <Head0 />
 
-        <AboutMe secName={'sobreMim'} titulo={'Sobre mim'} img_size={'250px'} UrlImg={'./src/assets/perfil.png'} img_class={'float-image-left'} texto={txt_abt_me} display_subcontent={'d-flex flex-column'} subtitle={'Redes sociais'}/>
+        <AboutMe secName={'sobreMim'} titulo={'Sobre mim'} img_size={'250px'} UrlImg={'./src/assets/perfil.png'} img_class={'float-image-left'} display_subcontent={'d-flex flex-column'} subtitle={'Redes sociais'}/>
 
         <ContentListing secName={'pesquisa'} titulo='Pesquisa' img_size={'250px'} UrlImg="./src/assets/pesquisa.jpg" img_class={'float-image-right'} texto={txt_abt_me}  subtitle={'Tópicos de interesse'} itens={items}/>
 
         <ContentListing secName={'pesquisa'} titulo='Publicacões' img_size={'250px'} UrlImg="./src/assets/publicacoes.png" img_class={'float-image-left'} texto={txt_abt_me}  subtitle={'Publicações de destaque'} itens={items}/>
 
-        <ContentListing secName={'pesquisa'} titulo='Publicacões' img_size={'250px'} UrlImg="./src/assets/publicacoes.png" img_class={'float-image-left'} texto={txt_abt_me}  subtitle={'Publicações de destaque'} itens={items}/>
 
         <ContentListing secName={'pesquisa'} titulo='Ensino' img_size={'250px'} UrlImg="./src/assets/ensino.jpg" img_class={'float-image-right'} texto={txt_abt_me}  subtitle={'Matérias lecionadas'} itens={items}/>
 
