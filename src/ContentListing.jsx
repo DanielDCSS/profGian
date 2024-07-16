@@ -19,7 +19,7 @@ function ContentListing({secName, titulo, img_size, UrlImg, img_class, texto, su
                 </div>
                 <div className="image-text-conteiner">
                     <img style={{width : img_size}} src={UrlImg} alt="imagem" className={img_class}/>
-                    <p>{texto}</p>
+                    <div dangerouslySetInnerHTML={{ __html : texto}} />
                 </div>
                 <div className="subtitleSection">
                     <FontAwesomeIcon icon={faArrowRight} /><h5>{subtitle}</h5>

@@ -127,6 +127,7 @@ section {
   padding-top: 40px auto;
   margin: 30px auto; /* Centraliza a div */
   text-align: justify;
+  width: 90%;
 }
 
 .float-image-left {

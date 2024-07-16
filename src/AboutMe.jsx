@@ -6,14 +6,11 @@ import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight ,faBook} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram , faTwitter } from '@fortawesome/free-brands-svg-icons'
-import data from './content.json'
+
 
 function AboutMe({secName, titulo, img_size, UrlImg, img_class, texto, display_subcontent, subtitle}){
 
-    data.map((data) =>{
-        const abt_me = data.Textos.teste
-    })
-    // parece interessante tirar o props texto e colocar o texto em cada componente
+    
     return (
         <section id={secName}>
             <div className={secName}>
@@ -23,7 +20,7 @@ function AboutMe({secName, titulo, img_size, UrlImg, img_class, texto, display_s
                 </div>
                 <div className="image-text-conteiner">
                     <img style={{width : img_size}} src={UrlImg} alt="imagem" className={img_class}/>
-                    <p>{abt_me}</p>
+                    <p>{texto}</p>
                 </div>
                 <div className={display_subcontent}>
                     <div className="subtitleSection">
