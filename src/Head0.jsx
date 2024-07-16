@@ -32,7 +32,7 @@ function Head0(){
                                 <img style={{width: '50px'}} src={UrlHead}/>
                             </div>
                             <div className="name-university">
-                                <h2>Kaique Albuquerque</h2>
+                                <h2>Giancarlo Espósito</h2>
                                 <p>Instituto de física da USP</p>
                             </div>
                         </div>

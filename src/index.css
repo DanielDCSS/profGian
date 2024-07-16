@@ -114,8 +114,10 @@ section {
   width: 60%;
   display: flex;
   flex-direction: column;
-  transform: translateY(20px);
-  transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.4s ease, transform 0.4s ease; 
+  animation-delay: 1s;
 }
 
 .image-text-container {
@@ -173,6 +175,9 @@ section {
   width: 60%;
   display: flex;
   flex-direction: column;
+  transform: translateY(20px); 
+  transition: opacity 0.4s ease, transform 0.4s ease; 
+  animation-delay: 1.2s;
 }
 
 footer {
@@ -184,4 +189,19 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sobreMim, .pesquisa {
+  animation: fadeInUp 1s ease forwards;
 }
