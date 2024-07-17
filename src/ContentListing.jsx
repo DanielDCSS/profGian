@@ -2,13 +2,19 @@
 Esse content trata-se de uma estrutura destinada a algum item que irá apresentar subintens.
 O conteudo principal é acompanhado de uma imagem e um texto, já o subconteudo é uma listagem dinâmica de itens.
 */
-
+import React, { useState, useEffect } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 import './ContentListing.css';
 
 function ContentListing({secName, titulo, img_size, UrlImg, img_class, texto, subtitle, itens = []}){
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+      // Aplique a animação quando o componente for montado
+      setVisible(true);
+    }, []);
     
     return (
         <section id={secName}>

@@ -7,7 +7,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-//Componentes internas
+//Componentes internos
 import Head0 from './Head0'
 import Footer0 from './Footer0'
 import AboutMe from './AboutMe'
