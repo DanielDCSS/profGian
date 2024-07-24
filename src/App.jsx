@@ -40,18 +40,23 @@ function App() {
 
   return (
     <div>
-        <Head0 />
+        <div className="cabecalho">
+          <Head0 />
+        </div>
+        
+        <main className='conteudo'>
+          <AboutMe secName={'sobreMim'} titulo={'Sobre mim'} img_size={'250px'} UrlImg={'./src/assets/foto_prof.png'} img_class={'float-image-left'} texto={abm} display_subcontent={'d-flex flex-column'} subtitle={'Redes sociais'}/>
 
-        <AboutMe secName={'sobreMim'} titulo={'Sobre mim'} img_size={'250px'} UrlImg={'./src/assets/foto_prof.png'} img_class={'float-image-left'} texto={abm} display_subcontent={'d-flex flex-column'} subtitle={'Redes sociais'}/>
+          <ContentListing secName={'pesquisa'} titulo='Pesquisa' img_size={'250px'} UrlImg="./src/assets/pesquisa.jpg" img_class={'float-image-right'} texto={pesq}  subtitle={'Tópicos de interesse'} itens={items}/>
 
-        <ContentListing secName={'pesquisa'} titulo='Pesquisa' img_size={'250px'} UrlImg="./src/assets/pesquisa.jpg" img_class={'float-image-right'} texto={pesq}  subtitle={'Tópicos de interesse'} itens={items}/>
-
-        <ContentListing secName={'publicacões'} titulo='Publicacões' img_size={'250px'} UrlImg="./src/assets/publicacoes.png" img_class={'float-image-left'} texto={publi}  subtitle={'Publicações de destaque'} itens={items}/>
+          <ContentListing secName={'publicacões'} titulo='Publicacões' img_size={'250px'} UrlImg="./src/assets/publicacoes.png" img_class={'float-image-left'} texto={publi}  subtitle={'Publicações de destaque'} itens={items}/>
 
 
-        <ContentListing secName={'ensino'} titulo='Ensino' img_size={'250px'} UrlImg="./src/assets/ensino.jpg" img_class={'float-image-right'} texto={ens}  subtitle={'Matérias lecionadas'} itens={items}/>
+          <ContentListing secName={'ensino'} titulo='Ensino' img_size={'250px'} UrlImg="./src/assets/ensino.jpg" img_class={'float-image-right'} texto={ens}  subtitle={'Matérias lecionadas'} itens={items}/>
 
-        <Contato0 secName={'contato'} id ="contact" alt="" titulo="Contato"/>
+          <Contato0 secName={'contato'} id ="contact" alt="" titulo="Contato"/>
+        </main>
+        
 
         <Footer0 />
       

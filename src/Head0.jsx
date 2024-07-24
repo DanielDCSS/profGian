@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './index.css';
+import { Navbar, Nav, Button  } from 'react-bootstrap';
 
 function Head0() {
     const UrlHead = "./src/assets/logoIfusp.png";
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
     const scrollToSection = (sectionId) => {
         const targetSection = document.getElementById(sectionId);
@@ -31,34 +35,41 @@ function Head0() {
     }, []);
 
     return (
-        <div>
-            <div className="cabecalho">
-                <header className={`Header ${scrolled ? 'scrolled' : ''}`}>
-                    <div className="container">
-                        <div className="apresentacao">
-                            <div className="logo">
-                                <img style={{ width: '50px' }} src={UrlHead} alt="Logo" />
-                            </div>
-                            <div className="name-university">
-                                <h2>Giancarlo Espósito</h2>
-                                <p>Instituto de física da USP</p>
-                            </div>
+        <>
+            <Navbar expand="lg">
+                <div className="container">
+                    <Navbar.Brand className='px-5' href="#home">
+                        <div className="d-none d-md-inline-block">
+                            <h2 className="name-university-title">Giancarlo Espósito</h2>
+                            <p className="name-university-subtitle">Instituto de Física da USP</p>
                         </div>
+                    </Navbar.Brand>
+                    <Button className="navbar-toggler" onClick={toggleSidebar}>
+                        <span className="navbar-toggler-icon"></span>
+                    </Button>
+                    <Navbar.Collapse id="basic-navbar-nav" className="d-none d-lg-flex">
+                        <Nav className="ms-auto">
+                            <Nav.Link onClick={() => scrollToSection('sobreMim')}>Sobre mim</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('pesquisa')}>Pesquisa</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('publicacoes')}>Publicações</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('ensino')}>Ensino</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('contato')}>Contato</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </div>
+            </Navbar>
 
-                        <div className="botoes-pagina">
-                            <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <button onClick={() => scrollToSection('sobreMim')} type="button" className="btn btn-outline">Sobre mim</button>
-                                <button onClick={() => scrollToSection('pesquisa')} type="button" className="btn btn-outline">Pesquisa</button>
-                                <button onClick={() => scrollToSection('publicacões')} type="button" className="btn btn-outline">Publicações</button>
-                                <button onClick={() => scrollToSection('ensino')} type="button" className="btn btn-outline">Ensino</button>
-                                <button onClick={() => scrollToSection('contato')} type="button" className="btn btn-outline">Contato</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </header>
+            <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                <Button className="close-btn" onClick={toggleSidebar}>×</Button>
+                <Nav className="flex-column">
+                    <Nav.Link onClick={() => scrollToSection('sobreMim')}>Sobre mim</Nav.Link>
+                    <Nav.Link onClick={() => scrollToSection('pesquisa')}>Pesquisa</Nav.Link>
+                    <Nav.Link onClick={() => scrollToSection('publicacoes')}>Publicações</Nav.Link>
+                    <Nav.Link onClick={() => scrollToSection('ensino')}>Ensino</Nav.Link>
+                    <Nav.Link onClick={() => scrollToSection('contato')}>Contato</Nav.Link>
+                </Nav>
             </div>
-        </div>
+        </>
     );
 }
 

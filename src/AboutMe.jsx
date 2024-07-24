@@ -12,29 +12,31 @@ function AboutMe({secName, titulo, img_size, UrlImg, img_class, texto, display_s
 
     
     return (
-        <section id={secName}>
-            <div className={secName}>
-                <div className="titleSection">
-                    <FontAwesomeIcon icon={faArrowRight} />
-                    <h2>{titulo}</h2>
-                </div>
-                <div className="image-text-conteiner">
-                    <img style={{width : img_size}} src={UrlImg} alt="imagem" className={img_class}/>
-                    <p>{texto}</p>
-                </div>
-                <div className={display_subcontent}>
-                    <div className="subtitleSection">
-                        <FontAwesomeIcon icon={faArrowRight} /><h5>{subtitle}</h5>
+        <>
+            <section id={secName}>
+                <div className={secName}>
+                    <div className="titleSection">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        <h2>{titulo}</h2>
                     </div>
-                    <div className="social_medias">
-                        <a href=""><FontAwesomeIcon icon={faFacebook} /></a>
-                        <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
-                        <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
-                        <a href=""><FontAwesomeIcon icon={faBook} /></a>
+                    <div className="image-text-conteiner">
+                        <img style={{width : img_size}} src={UrlImg} alt="imagem" className={img_class}/>
+                        <p>{texto}</p>
+                    </div>
+                    <div className={display_subcontent}>
+                        <div className="subtitleSection">
+                            <FontAwesomeIcon icon={faArrowRight} /><h5>{subtitle}</h5>
+                        </div>
+                        <div className="social_medias">
+                            <a href=""><FontAwesomeIcon icon={faFacebook} /></a>
+                            <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+                            <a href=""><FontAwesomeIcon icon={faBook} /></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 
