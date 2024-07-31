@@ -2,7 +2,7 @@
   "name": "profgian",
   "private": true,
   "version": "0.0.0",
-  "homepage": "ProfReact/",
+  "homepage": "profGian/",
   "type": "module",
   "scripts": {
     "dev": "vite",
