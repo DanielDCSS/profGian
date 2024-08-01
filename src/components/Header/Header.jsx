@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './index.css';
+import './Header.css';
 import { Navbar, Nav, Button  } from 'react-bootstrap';
 
-function Head0() {
-    const UrlHead = "./src/assets/logoIfusp.png";
+function Header() {
+    const UrlHead = "./assets/logoIfusp.png";
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
@@ -73,4 +73,4 @@ function Head0() {
     );
 }
 
-export default Head0;
+export default Header;

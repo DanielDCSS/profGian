@@ -1,4 +1,6 @@
-function Footer0(){
+import './Footer.css'
+
+function Footer(){
     return(
         <footer>
             <div className="container">
@@ -7,4 +9,4 @@ function Footer0(){
         </footer>
     )
 }
-export default Footer0
+export default Footer;

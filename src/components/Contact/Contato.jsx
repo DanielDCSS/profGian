@@ -6,7 +6,7 @@ import {faArrowRight ,faBook} from '@fortawesome/free-solid-svg-icons'
 /*import { faFacebook, faInstagram , faTwitter } from '@fortawesome/free-brands-svg-icons' */
 
 
-function Contato0({secName, titulo, endereço, email, linkedln, telefone , display_subcontent, subtitle}){
+function Contato({secName, titulo, endereço, email, linkedln, telefone , display_subcontent, subtitle}){
 
     const ref = "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHmWjNFXNvhcwAAAZCkb57o-CaPV-Y4bUFlcaAME_51VHyp4THF2iGWZNWCqsOdD-MEXCf1nLVPCcxHsMqKav1DSXV5_77275sbKAb8yZOn5tkqD8_UppAlnULYpXMKoOgHiQo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcaiocesar-aguiar%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app";
     
@@ -27,7 +27,7 @@ function Contato0({secName, titulo, endereço, email, linkedln, telefone , displ
         </section>
     )
 }
-Contato0.defaultProps = {
+Contato.defaultProps = {
     secName: 'conteudo',
     titulo: 'Contato',
     title_icon: "fa-solid fa-check",
@@ -44,5 +44,5 @@ Contato0.defaultProps = {
 }
 
 
-export default Contato0 ; 
+export default Contato; 
 

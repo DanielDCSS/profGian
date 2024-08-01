@@ -4,93 +4,7 @@ body {
   padding: 0;
 }
 
-/*Aqui começa a parte do header da página*/
 
-.cabecalho{
-  width: 100%;
-  height: 93px;
-  background-color: #fff;
-  border-bottom: 10px solid #0b55a3;
-}
-
-.name-university-title, .name-university-subtitle {
-  margin: 0;
-  color: #004590;
-}
-
-.nav-link {
-  color: #004590 !important;
-}
-
-.nav-link:hover {
-  color: #004590 !important;
-  transform: scale(1.19);
-  text-decoration: underline;
-  text-decoration-color: #004590;
-  text-decoration-thickness: 5px;
-}
-
-@media (max-width: 768px) {
-  .navbar-brand .d-none.d-md-inline-block {
-      display: none;
-  }
-
-  .navbar-collapse {
-    display: flex ;
-    flex-direction: column;
-    align-items: flex-start; /* Alinha os itens à esquerda */
-  }
-}
-
-@media (max-width: 1000px) {
-  .name-university-subtitle{
-    display: none;
-  }
-}
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #0b55a3;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 90px;
-}
-
-.sidebar.open {
-  width: 250px; /* Width of the sidebar */
-  z-index: 1001;
-  display: block;
-}
-
-.sidebar .flex-column{
-  position: absolute;
-  top: 60px;
-  left: 10px;
-}
-
-.sidebar .close-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 40px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.sidebar .nav-link {
-  color: #d5e0b5 !important;
-  text-align: left;
-}
-
-.sidebar .nav-link:hover {
-  color: #a5c3a7 !important;
-}
 
 /*Aqui começa a parte do conteúdo principal da página*/
 .conteudo{
@@ -122,55 +36,6 @@ section {
   color:#1766b5;
   font-size: 20px;
   margin-left: 50px;
-}
-
-
-/*Apresentação pessoal*/
-
-.sobreMim{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  transition: opacity 0.4s ease, transform 0.4s ease; 
-  animation-delay: 1s;
-}
-
-.image-text-container {
-  margin: 10px auto; /* Centraliza a div */
-  text-align: justify;
-}
-
-.texto_contato {
-  padding-top: 40px auto;
-  margin: 30px auto; /* Centraliza a div */
-  text-align: justify;
-  width: 90%;
-}
-
-.float-image-left {
-  float: left; /* Faz a imagem flutuar à esquerda */
-  margin-right: 20px; /* Espaço entre a imagem e o texto */
-  width: 150px; /* Largura da imagem, ajuste conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.image-text-container::after {
-  content: "";
-  display: table;
-  clear: both; /* Limpa o float para evitar problemas de layout */
-}
-
-.social_medias{
-  display: flex;
-  justify-content: space-around;
-  font-size: 30px;
-  margin: 10px;
-}
-
-.social_medias i{
-  color: #3a3838;
 }
 
 /*Pesquisa*/
@@ -210,16 +75,6 @@ section {
   animation-delay: 1.2s;
 }
 
-footer {
-  background-color: #6d8b89;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-footer p {
-  margin: 0;
-}
 
 /* Animação */
 @keyframes fadeInUp {

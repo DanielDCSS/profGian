@@ -6,6 +6,7 @@ import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight ,faBook} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram , faTwitter } from '@fortawesome/free-brands-svg-icons'
+import './AboutMe.css'
 
 
 function AboutMe({secName, titulo, img_size, UrlImg, img_class, texto, display_subcontent, subtitle}){

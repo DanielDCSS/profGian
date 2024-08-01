@@ -1,0 +1,85 @@
+.cabecalho{
+    width: 100%;
+    height: 93px;
+    background-color: #fff;
+    border-bottom: 10px solid #0b55a3;
+  }
+  
+  .name-university-title, .name-university-subtitle {
+    margin: 0;
+    color: #004590;
+  }
+  
+  .nav-link {
+    color: #004590 !important;
+  }
+  
+  .nav-link:hover {
+    color: #004590 !important;
+    transform: scale(1.19);
+    text-decoration: underline;
+    text-decoration-color: #004590;
+    text-decoration-thickness: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand .d-none.d-md-inline-block {
+        display: none;
+    }
+  
+    .navbar-collapse {
+      display: flex ;
+      flex-direction: column;
+      align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .name-university-subtitle{
+      display: none;
+    }
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #0b55a3;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 90px;
+  }
+  
+  .sidebar.open {
+    width: 250px; /* Width of the sidebar */
+    z-index: 1001;
+    display: block;
+  }
+  
+  .sidebar .flex-column{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+  }
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .sidebar .nav-link {
+    color: #d5e0b5 !important;
+    text-align: left;
+  }
+  
+  .sidebar .nav-link:hover {
+    color: #a5c3a7 !important;
+  }
