@@ -4,8 +4,6 @@ body {
   padding: 0;
 }
 
-
-
 /*Aqui começa a parte do conteúdo principal da página*/
 .conteudo{
   display: flex;
@@ -86,7 +84,4 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
-}
-.sobreMim, .pesquisa {
-  animation: fadeInUp 1s ease forwards;
 }

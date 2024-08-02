@@ -37,10 +37,10 @@ function Header() {
     return (
         <>
             <Navbar expand="lg">
-                <div className="container">
-                    <Navbar.Brand className='px-5' href="#home">
+                <div className="header-class">
+                    <Navbar.Brand className='px-5 ' href="home">
                         <div className="d-none d-md-inline-block">
-                            <h2 className="name-university-title">Giancarlo Espósito</h2>
+                            <h2 className="name-university-title">Giancarlo Brito</h2>
                             <p className="name-university-subtitle">Instituto de Física da USP</p>
                         </div>
                     </Navbar.Brand>
@@ -49,7 +49,7 @@ function Header() {
                     </Button>
                     <Navbar.Collapse id="basic-navbar-nav" className="d-none d-lg-flex">
                         <Nav className="ms-auto">
-                            <Nav.Link onClick={() => scrollToSection('sobreMim')}>Sobre mim</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('sobreMim')}>Trajetória academica</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('pesquisa')}>Pesquisa</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('publicacoes')}>Publicações</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('ensino')}>Ensino</Nav.Link>
