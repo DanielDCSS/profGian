@@ -10,6 +10,26 @@
   padding: 0px 20px;
 }
 
+.social-class{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0px 40px;
+  background-color: #004590;
+}
+
+.social-medias{
+  display: flex;
+  justify-content: space-around;  
+  gap: 10px;
+}
+
+.icon{
+  color: black;
+}
+
 .name-university-title,
 .name-university-subtitle {
   margin: 0;

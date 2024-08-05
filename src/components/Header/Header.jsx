@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import { Navbar, Nav, Button  } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFlask, faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faGithub, faInstagram , faOrcid } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 
 function Header() {
     const UrlHead = "./assets/logoIfusp.png";
@@ -36,7 +40,20 @@ function Header() {
 
     return (
         <>
-            <Navbar expand="lg">
+            <Navbar className='flex-column' expand="lg">
+                <div className='social-class'>
+                    <div className="social-medias">
+                        <a href=""><FontAwesomeIcon icon={faLinkedin} className='icon'/></a>
+                        <a href=""><FontAwesomeIcon icon={faOrcid} className='icon'/></a>
+                        <a href=""><FontAwesomeIcon icon={faGithub} className='icon'/></a>
+                        <a href=""><FontAwesomeIcon icon={faFlask} className='icon'/></a>
+                        <a href=""><FontAwesomeIcon icon={faFacebook} className='icon' /></a>
+                        <a href=""><FontAwesomeIcon icon={faInstagram} className='icon'/></a>
+                    </div>
+                    <div className='email'>
+                        <a href=""><FontAwesomeIcon icon={faMailBulk} className='icon'/> </a>
+                    </div>
+                </div>
                 <div className="header-class">
                     <Navbar.Brand className='px-5 ' href="home">
                         <div className="d-none d-md-inline-block">
